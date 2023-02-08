@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Paulo Tec - Acessórios Eletrônicos</title>
+    <style>
+      /* Estilos para o modo claro */
+      .light-mode {
+        background-color: #fff;
+        color: #000;
+      }
+      /* Estilos para o modo escuro */
+      .dark-mode {
+        background-color: #000;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Paulo Tec - Acessórios Eletrônicos</h1>
+    <nav>
+      <ul>
+        <li><a href="#pendrive">Pendrive</a></li>
+        <li><a href="#hds">HDs</a></li>
+        <li><a href="#memorias">Memórias</a></li>
+        <li><a href="#celulares">Celulares</a></li>
+        <li><a href="#gadgets">Gadgets</a></li>
+        <li><a href="#relogios">Relógios</a></li>
+        <li><a href="#fones">Fones</a></li>
+      </ul>
+    </nav>
+    <button id="switch-mode">Mudar para o modo escuro</button>
+    <br><br>
+    <p>Contato:</p>
+    <p>Email: <a href="mailto:paulodemetrio1982@gmail.com">paulodemetrio1982@gmail.com</a></p>
+    <p>WhatsApp: <a href="tel:11976377639">11976377639</a></p>
+    <script>
+      const switchButton = document.querySelector("#switch-mode");
+      switchButton.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+        document.body.classList.toggle("dark-mode");
+        if (switchButton.innerHTML === "Mudar para o modo escuro") {
+          switchButton.innerHTML = "Mudar para o modo claro";
+        } else {
+          switchButton.innerHTML = "Mudar para o modo escuro";
+        }
+      });
+    </script>
+  </body>
+</html>
