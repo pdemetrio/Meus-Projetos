@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ted Style</title>
+    <link rel="stylesheet" href="ted.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul class="navbar">
+        <li><a href="#">Adidas</a></li>
+        <li><a href="#">Nike</a></li>
+        <li><a href="#">Puma</a></li>
+        <li><a href="#">New Balance</a></li>
+        <li><a href="#">Under Armor</a></li>
+        <li><a href="#">Diadora</a></li>
+        <li class="nav-right"><button class="theme-toggle">Modo Escuro</button></li>
+      </ul>
+    </nav>
+
+    <!-- Cadastro de clientes -->
+    <section class="cadastro">
+      <h2>Cadastre-se</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required />
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <!-- Formas de pagamento -->
+    <section class="pagamento">
+      <h2>Formas de Pagamento</h2>
+      <ul>
+        <li><img src="cartao_credito.png" alt="Cartão de Crédito" /> Cartão de Crédito</li>
+        <li><img src="cartao_debito.png" alt="Cartão de Débito" /> Cartão de Débito</li>
+        <li><img src="pix.png" alt="Pix" /> Pix</li>
+      </ul>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
